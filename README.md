@@ -13,7 +13,7 @@ This project evaluates multiple machine learning models to forecast sales and pr
 
 ---
 
-## 🔎 Analysis Approach
+## Analysis Approach
 1. **Data Preparation**
    - Cleaning and feature engineering (ad spend, engagement, seasonal variables).
    - Train-test split for model evaluation.
@@ -44,21 +44,21 @@ This project evaluates multiple machine learning models to forecast sales and pr
 | Model             | R²    | RMSE   | MAPE   | Notes |
 |-------------------|-------|--------|--------|-------|
 | Linear Regression | 0.939 | 580.5  | 4.39%  | Strong fit, interpretable |
-| Ridge             | 0.941 | 570.0  | 4.27%  | ⭐ Best performer |
+| Ridge             | 0.941 | 570.0  | 4.27%  | Best performer |
 | Lasso             | 0.936 | 594.6  | 4.45%  | Feature selection effect |
 | SARIMAX           | 0.714 | 1288.5 | 9.29%  | Weak with external drivers |
 | Random Forest     | 0.831 | 967.2  | 7.14%  | Captures non-linearity but less accurate |
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 - **Top Drivers of Sales**: Google Ads, Facebook Ads, TikTok Ads (spend + engagement).  
 - **Seasonality**: Quarter and month significantly affect sales patterns.  
 - **Model Outcome**: Ridge Regression best balances accuracy, stability, and interpretability.  
 
 ---
 
-## 💡 Final Recommendation
+## Final Recommendation
 1. **Adopt Ridge Regression** as the core forecasting model for sales.  
 2. **Allocate Marketing Budget** based on feature importance:  
    - **Google Ads → 40%**  
